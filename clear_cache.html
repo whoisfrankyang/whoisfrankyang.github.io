@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clearing Cache...</title>
+  <script>
+    // Clear browser cache and redirect to main page
+    function clearCacheAndRedirect() {
+      // Force a cache refresh
+      window.location.reload(true);
+
+      // After a short delay, redirect to the main page
+      setTimeout(function () {
+        window.location.href = 'index.html';
+      }, 1000);
+    }
+  </script>
+</head>
+
+<body onload="clearCacheAndRedirect()">
+  <div style="text-align: center; margin-top: 100px;">
+    <h2>Clearing browser cache...</h2>
+    <p>You will be redirected to the main page in a moment.</p>
+    <p>If you are not redirected, <a href="index.html">click here</a>.</p>
+  </div>
+</body>
+
+</html>

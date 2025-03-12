@@ -1,0 +1,210 @@
+/* Custom styles for Bohan Yang's personal website */
+
+/* Prevent image caching */
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e0e0e0' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #2c3e50;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #ecf0f1;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #3498db;
+}
+
+.profile-section {
+  padding: 40px 0;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.profile-image {
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.profile-image:hover {
+  transform: scale(1.02);
+}
+
+.name-header {
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.section-title {
+  font-family: 'Oswald', sans-serif;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 28px;
+  color: #7f8c8d;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons a:hover {
+  color: #3498db;
+  transform: translateY(-3px);
+}
+
+.contact-info {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.content-section {
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.paper {
+  margin-bottom: 20px;
+}
+
+.citation {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.authors {
+  color: #333;
+}
+
+.journal {
+  font-style: italic;
+}
+
+.volume,
+.arxiv {
+  color: #555;
+}
+
+.paper a {
+  color: #3498db;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.paper a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 0.9em;
+  margin-top: 30px;
+  background-color: white;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.footer a {
+  color: #7f8c8d;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #3498db;
+}
+
+/* Strong text styling */
+strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Panel styling for projects */
+.panel-default {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.panel-default:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.panel-heading {
+  background-color: #f8f9fa !important;
+  border-bottom: 2px solid #3498db !important;
+}
+
+.panel-title {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  border-color: #3498db;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-section {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .contact-info {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .social-icons {
+    text-align: center;
+  }
+}
