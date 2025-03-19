@@ -391,3 +391,91 @@ strong {
 .timeline-item+.timeline-item {
   margin-top: 30px;
 }
+
+/* Project Image Styles */
+.project-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-link {
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Remove old preview styles */
+.project-preview,
+.preview-content,
+.preview-image,
+.preview-content-inner,
+.preview-title,
+.preview-description {
+  display: none;
+}
+
+/* Project Grid Layout */
+.row.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  /* Negative margin to offset padding */
+}
+
+.row.project-grid>[class*='col-'] {
+  padding: 15px;
+  display: flex;
+}
+
+.row.project-grid .panel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.row.project-grid .panel-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  width: 100%;
+  height: 250px;
+  /* Fixed height for all images */
+  object-fit: contain;
+  /* Maintain aspect ratio */
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.02);
+}
+
+.project-link {
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Ensure consistent spacing for project descriptions */
+.panel-body p {
+  margin-bottom: 10px;
+}
+
+.panel-body p:last-child {
+  margin-top: auto;
+  /* Push technology stack to bottom */
+}

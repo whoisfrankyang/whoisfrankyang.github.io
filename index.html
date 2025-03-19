@@ -195,6 +195,19 @@
               </div>
 
               <div class="timeline-item">
+                <div class="timeline-badge education"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title">Cornell University</h4>
+                    <p><small class="text-muted"><i class="fa fa-clock-o"></i> 2022</small></p>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Get accepted into the College of Engineering at Cornell University!</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item">
                 <div class="timeline-badge research"><i class="fa-solid fa-heartbeat"></i></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -253,22 +266,20 @@
         <div class="content-section">
           <h2 id="projects" class="section-title">Projects</h2>
 
-          <div class="row">
+          <div class="row project-grid">
             <!-- Project 1 -->
             <div class="col-md-6">
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h3 class="panel-title"><i class="fa-solid fa-microchip"></i> MPI in Diffusion Modeling</h3>
+                  <h3 class="panel-title"><i class="fa-solid fa-microchip"></i> DXF2CAD</h3>
                 </div>
                 <div class="panel-body">
-                  <p>
-                  <p>A high-performance parallel simulation of 2D diffusion using MPI.
-                    system scales across processors, enabling efficient modeling of large,
-                    high-resolution grids for scientific computation.</p>
-                  </p>
-                  <p><strong>Technologies:</strong> C++, MPI, High Performance Computing</p>
-                  <a href="https://github.com/whoisfrankyang/DiffusionMPI" class="btn btn-primary btn-sm">View
-                    Project</a>
+                  <a href="https://github.com/whoisfrankyang/DiffusionMPI" class="project-link">
+                    <img src="DXF2CAD_image.png" alt="DXF2CAD Preview" class="project-image">
+                  </a>
+                  <p>An AI-powered end-to-end pipeline for converting 2D blueprints in DXF
+                    format to 3D CAD models in STEP format using parametric sequence modeling.</p>
+                  <p><strong>Technologies:</strong> Python, PyTorch, Transformers</p>
                 </div>
               </div>
             </div>
@@ -277,36 +288,34 @@
             <div class="col-md-6">
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h3 class="panel-title"><i class="fa-solid fa-brain"></i> CADParser: Transformer-based CAD to Sequence
-                    reimplementation
-                  </h3>
+                  <h3 class="panel-title"><i class="fa-solid fa-brain"></i> CADParser</h3>
                 </div>
                 <div class="panel-body">
+                  <a href="https://github.com/spicywagyu04/CADParser" class="project-link">
+                    <img src="CADParser_image.png" alt="CADParser Preview" class="project-image">
+                  </a>
                   <p>Reimplemented a transformer-based model that learns to generate editable construction sequences
                     from 3D B-Rep CAD geometry, enabling parametric design automation and model reconstruction.</p>
                   <p><strong>Technologies:</strong> Python, PyTorch, Transformers, Graph Neural Networks (DGL)</p>
-                  <a href="https://github.com/spicywagyu04/CADParser" class="btn btn-primary btn-sm">View Project</a>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="row">
             <!-- Project 3 -->
+
             <div class="col-md-6">
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h3 class="panel-title"><i class="fa-solid fa-database"></i> Address Matching for Provider Directory
-                    Integrity</h3>
+                  <h3 class="panel-title"><i class="fa-solid fa-microchip"></i> MPI in Diffusion Modeling</h3>
                 </div>
                 <div class="panel-body">
-                  <p>Developed methods to detect and reduce inconsistencies in healthcare provider directories to
-                    improve data reliability and patient access. Leveraged multi-source data comparison and explored
-                    scoring techniques to validate provider locations.
-                  </p>
-                  <p><strong>Technologies:</strong> Python, Pandas, Locality Sensitive Hashing (LSH)</p>
-                  <a href="https://github.com/whoisfrankyang/Improving-Healthcare-Provider-Directories-with-Availity"
-                    class="btn btn-primary btn-sm">View Project</a>
+                  <a href="https://github.com/whoisfrankyang/DiffusionMPI" class="project-link">
+                    <img src="Diffusion.gif" alt="Diffusion MPI Preview" class="project-image">
+                  </a>
+                  <p>A high-performance parallel simulation of 2D diffusion using MPI.
+                    system scales across processors, enabling efficient modeling of large,
+                    high-resolution grids for scientific computation.</p>
+                  <p><strong>Technologies:</strong> C++, MPI, High Performance Computing</p>
                 </div>
               </div>
             </div>
@@ -315,16 +324,34 @@
             <div class="col-md-6">
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h3 class="panel-title"><i class="fa-solid fa-code"></i> Pokémon Kingdom: Turn-Based Battle Simulator
-                  </h3>
+                  <h3 class="panel-title"><i class="fa-solid fa-database"></i> Address Matching</h3>
                 </div>
                 <div class="panel-body">
-                  <p> Built an interactive turn-based Pokémon battle simulator where users input commands to trigger
-                    elemental attacks, gain EXP, and level up their Pokémon with evolving stats and abilities.
-                  </p>
+                  <a href="https://github.com/whoisfrankyang/Improving-Healthcare-Provider-Directories-with-Availity"
+                    class="project-link">
+                    <img src="Availity_Healthcare_Provider.png" alt="Address Matching Preview" class="project-image">
+                  </a>
+                  <p>Developed methods to detect and reduce inconsistencies in healthcare provider directories to
+                    improve data reliability and patient access. Leveraged multi-source data comparison and explored
+                    scoring techniques to validate provider locations.</p>
+                  <p><strong>Technologies:</strong> Python, Pandas, Locality Sensitive Hashing (LSH)</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="col-md-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><i class="fa-solid fa-code"></i> Pokémon Kingdom</h3>
+                </div>
+                <div class="panel-body">
+                  <a href="https://github.com/whoisfrankyang/PokemonKingdom" class="project-link">
+                    <img src="Pokemon_Game.png" alt="Pokemon Kingdom Preview" class="project-image">
+                  </a>
+                  <p>Built an interactive turn-based Pokémon battle simulator where users input commands to trigger
+                    elemental attacks, gain EXP, and level up their Pokémon with evolving stats and abilities.</p>
                   <p><strong>Technologies:</strong> OCaml</p>
-                  <a href="https://github.com/whoisfrankyang/PokemonKingdom" class="btn btn-primary btn-sm">View
-                    Project</a>
                 </div>
               </div>
             </div>
