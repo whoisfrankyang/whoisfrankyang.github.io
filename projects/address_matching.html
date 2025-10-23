@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!--
+    Address Matching Project Detail Page
+    Based on Plain-Academic by Vasilios Mavroudis
+    Modified by Bohan Yang
+-->
+
+<html lang="en">
+
+<head>
+  <title>Address Matching - Bohan Yang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Address matching system to ensure consistency of healthcare provider directories">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- Font Awesome for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700|Open+Sans:400,600" rel="stylesheet" type="text/css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .project-detail {
+      margin-top: 40px;
+    }
+
+    .project-image-large {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .project-content {
+      margin-top: 30px;
+    }
+
+    .project-section {
+      margin-bottom: 40px;
+    }
+
+    .project-section h3 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .tech-badge {
+      background-color: #3498db;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 15px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .back-link {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .feature-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .feature-list li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .feature-list li:before {
+      content: "✓";
+      color: #27ae60;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#publications">Publications</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row project-detail">
+      <div class="col-md-12">
+        <!-- Back Link -->
+        <p><a href="../index.html" class="back-link"><i class="fa fa-arrow-left"></i> Back to Projects</a></p>
+
+        <!-- Project Header -->
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../Availity_Healthcare_Provider.png" alt="Address Matching System" class="project-image-large">
+          </div>
+          <div class="col-md-6">
+            <h1 class="section-title">Address Matching</h1>
+            <p class="lead">Healthcare provider directory consistency system</p>
+
+            <!-- GitHub Link -->
+            <p><a href="https://github.com/whoisfrankyang/Improving-Healthcare-Provider-Directories-with-Availity"
+                target="_blank" class="btn btn-primary">
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a></p>
+
+            <!-- Technology Stack -->
+            <div class="project-section">
+              <h4>Technologies Used</h4>
+              <div class="tech-stack">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Pandas</span>
+                <span class="tech-badge">Locality Sensitive Hashing</span>
+                <span class="tech-badge">Data Cleaning</span>
+                <span class="tech-badge">Fuzzy Matching</span>
+                <span class="tech-badge">Healthcare Data</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Content -->
+        <div class="project-content">
+          <div class="project-section">
+            <h3>Overview</h3>
+            <p>An address matching system designed to ensure the consistency of healthcare provider directories. This
+              project addresses the critical challenge of maintaining accurate provider information across multiple
+              healthcare databases, which is essential for patient care coordination, insurance verification, and
+              healthcare system efficiency.</p>
+          </div>
+
+          <div class="project-section">
+            <h3>Key Features</h3>
+            <ul class="feature-list">
+              <li><strong>Fuzzy Address Matching:</strong> Handles variations in address formatting and typos</li>
+              <li><strong>Locality Sensitive Hashing (LSH):</strong> Efficient similarity search for large datasets</li>
+              <li><strong>Data Standardization:</strong> Normalizes addresses to consistent formats</li>
+              <li><strong>Duplicate Detection:</strong> Identifies and merges duplicate provider entries</li>
+              <li><strong>Confidence Scoring:</strong> Provides match confidence levels for manual review</li>
+              <li><strong>Scalable Processing:</strong> Handles large healthcare provider datasets efficiently</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h3>Technical Implementation</h3>
+            <p>The system employs advanced data science techniques:</p>
+            <ul>
+              <li><strong>Address Parsing:</strong> Extracts and standardizes address components (street, city, state,
+                ZIP)</li>
+              <li><strong>LSH Implementation:</strong> Uses MinHash and Jaccard similarity for efficient comparison</li>
+              <li><strong>Fuzzy String Matching:</strong> Implements Levenshtein distance and phonetic matching</li>
+              <li><strong>Data Validation:</strong> Cross-references with authoritative address databases</li>
+              <li><strong>Performance Optimization:</strong> Vectorized operations using Pandas for speed</li>
+              <li><strong>Quality Metrics:</strong> Tracks matching accuracy and system performance</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h3>Healthcare Impact</h3>
+            <p>This system addresses critical challenges in healthcare data management:</p>
+            <ul>
+              <li><strong>Provider Directory Accuracy:</strong> Ensures patients can find correct provider information
+              </li>
+              <li><strong>Insurance Verification:</strong> Improves accuracy of provider network verification</li>
+              <li><strong>Care Coordination:</strong> Enables better coordination between healthcare providers</li>
+              <li><strong>Regulatory Compliance:</strong> Helps maintain compliance with healthcare data standards</li>
+              <li><strong>Cost Reduction:</strong> Reduces administrative overhead in provider management</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h3>Data Science Challenges</h3>
+            <p>The project tackles complex data science problems:</p>
+            <ul>
+              <li><strong>Data Quality:</strong> Handles inconsistent and incomplete address data</li>
+              <li><strong>Scalability:</strong> Processes millions of provider records efficiently</li>
+              <li><strong>Accuracy vs. Speed:</strong> Balances matching accuracy with processing speed</li>
+              <li><strong>Edge Cases:</strong> Handles unusual address formats and international addresses</li>
+              <li><strong>False Positives:</strong> Minimizes incorrect matches that could impact patient care</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h3>Results & Impact</h3>
+            <p>The system achieved significant improvements in healthcare data quality:</p>
+            <ul>
+              <li><strong>Duplicate Reduction:</strong> Identified and merged thousands of duplicate provider entries
+              </li>
+              <li><strong>Data Accuracy:</strong> Improved address consistency across provider directories</li>
+              <li><strong>Processing Speed:</strong> Reduced manual review time by 80%</li>
+              <li><strong>Cost Savings:</strong> Reduced administrative costs for provider directory maintenance</li>
+              <li><strong>Patient Experience:</strong> Improved accuracy of provider search results</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>© 2023 Bohan Yang. All rights reserved.</p>
+          <p>
+            <small>
+              Design based on <a href="https://github.com/mavroudisv/plain-academic" target="_blank">Plain Academic</a>
+            </small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

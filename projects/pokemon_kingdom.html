@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!--
+    Pokémon Kingdom Project Detail Page
+    Based on Plain-Academic by Vasilios Mavroudis
+    Modified by Bohan Yang
+-->
+
+<html lang="en">
+
+<head>
+  <title>Pokémon Kingdom - Bohan Yang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive turn-based Pokémon battle game implemented in OCaml">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- Font Awesome for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700|Open+Sans:400,600" rel="stylesheet" type="text/css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .project-detail {
+      margin-top: 40px;
+    }
+
+    .project-image-large {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .project-content {
+      margin-top: 30px;
+    }
+
+    .project-section {
+      margin-bottom: 40px;
+    }
+
+    .project-section h3 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .tech-badge {
+      background-color: #3498db;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 15px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .back-link {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .feature-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .feature-list li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .feature-list li:before {
+      content: "✓";
+      color: #27ae60;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#publications">Publications</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row project-detail">
+      <div class="col-md-12">
+        <!-- Back Link -->
+        <p><a href="../index.html" class="back-link"><i class="fa fa-arrow-left"></i> Back to Projects</a></p>
+
+        <!-- Project Header -->
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../Pokemon_Game.png" alt="Pokémon Kingdom Game" class="project-image-large">
+          </div>
+          <div class="col-md-6">
+            <h1 class="section-title">Pokémon Kingdom</h1>
+            <p class="lead">Interactive turn-based Pokémon battle game</p>
+
+            <!-- GitHub Link -->
+            <p><a href="https://github.com/whoisfrankyang/PokemonKingdom" target="_blank" class="btn btn-primary">
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a></p>
+
+            <!-- Technology Stack -->
+            <div class="project-section">
+              <h4>Technologies Used</h4>
+              <div class="tech-stack">
+                <span class="tech-badge">OCaml</span>
+                <span class="tech-badge">Functional Programming</span>
+                <span class="tech-badge">Game Development</span>
+                <span class="tech-badge">Turn-based Combat</span>
+                <span class="tech-badge">Data Structures</span>
+                <span class="tech-badge">Algorithm Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Content -->
+        <div class="project-content">
+          <div class="project-section">
+            <h3>Overview</h3>
+            <p>Pokémon Kingdom is an interactive turn-based Pokémon battle game implemented entirely in OCaml. This
+              project demonstrates advanced functional programming concepts, complex data structure design, and game
+              development principles. The game features authentic Pokémon mechanics including type advantages, move
+              effects, and strategic battle gameplay.</p>
+          </div>
+
+          <div class="project-section">
+            <h3>Key Features</h3>
+            <ul class="feature-list">
+              <li><strong>Turn-based Combat:</strong> Classic Pokémon battle mechanics with strategic depth</li>
+              <li><strong>Type System:</strong> Implements the complete Pokémon type effectiveness system</li>
+              <li><strong>Move System:</strong> Diverse moves with different effects, power, and accuracy</li>
+              <li><strong>Pokémon Database:</strong> Comprehensive collection of Pokémon with stats and abilities</li>
+              <li><strong>Battle AI:</strong> Intelligent opponent AI with strategic decision-making</li>
+              <li><strong>Interactive Interface:</strong> User-friendly command-line interface for battles</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h3>Technical Implementation</h3>
+            <p>The game showcases advanced OCaml programming techniques:</p>
+            <ul>
+              <li><strong>Functional Design:</strong> Pure functional programming with immutable data structures</li>
+              <li><strong>Type System:</strong> Leverages OCaml's powerful type system for game state management</li>
+              <li><strong>Pattern Matching:</strong> Extensive use of pattern matching for game logic</li>
+              <li><strong>Data Structures:</strong> Custom data types for Pokémon, moves, and battle states</li>
+              <li><strong>Algorithm Design:</strong> Efficient algorithms for battle calculations and AI</li>
+              <li><strong>Modular Architecture:</strong> Well-organized modules for different game components</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h3>Game Mechanics</h3>
+            <p>The game implements authentic Pokémon battle mechanics:</p>
+            <ul>
+              <li><strong>Type Effectiveness:</strong> Fire beats Grass, Water beats Fire, etc.</li>
+              <li><strong>Stat System:</strong> HP, Attack, Defense, Speed, and Special stats</li>
+              <li><strong>Move Categories:</strong> Physical, Special, and Status moves</li>
+              <li><strong>Status Effects:</strong> Burn, Poison, Sleep, and other status conditions</li>
+              <li><strong>Critical Hits:</strong> Random critical hit mechanics</li>
+              <li><strong>Accuracy System:</strong> Move accuracy and evasion mechanics</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h3>Programming Concepts Demonstrated</h3>
+            <p>This project showcases mastery of advanced programming concepts:</p>
+            <ul>
+              <li><strong>Functional Programming:</strong> Immutable data and pure functions</li>
+              <li><strong>Type Safety:</strong> Leveraging OCaml's type system for correctness</li>
+              <li><strong>Algorithm Design:</strong> Efficient battle calculation algorithms</li>
+              <li><strong>Data Structure Design:</strong> Custom types for complex game entities</li>
+              <li><strong>Software Architecture:</strong> Modular design for maintainable code</li>
+              <li><strong>Game Development:</strong> State management and game loop implementation</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h3>Learning Outcomes</h3>
+            <p>This project demonstrates proficiency in:</p>
+            <ul>
+              <li>Advanced OCaml programming and functional programming paradigms</li>
+              <li>Complex data structure design and implementation</li>
+              <li>Game development principles and state management</li>
+              <li>Algorithm design for game mechanics and AI</li>
+              <li>Software architecture and modular design</li>
+              <li>Problem-solving in a complex, multi-faceted domain</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>© 2023 Bohan Yang. All rights reserved.</p>
+          <p>
+            <small>
+              Design based on <a href="https://github.com/mavroudisv/plain-academic" target="_blank">Plain Academic</a>
+            </small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

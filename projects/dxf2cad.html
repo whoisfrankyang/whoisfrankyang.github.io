@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--
+    DXF2CAD Project Detail Page
+    Based on Plain-Academic by Vasilios Mavroudis
+    Modified by Bohan Yang
+-->
+
+<html lang="en">
+
+<head>
+  <title>DXF2CAD - Bohan Yang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Generative AI framework that learns from 2D DXF blueprints to construct editable 3D CAD models">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- Font Awesome for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700|Open+Sans:400,600" rel="stylesheet" type="text/css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .project-detail {
+      margin-top: 40px;
+    }
+
+    .project-image-large {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .project-content {
+      margin-top: 30px;
+    }
+
+    .project-section {
+      margin-bottom: 40px;
+    }
+
+    .project-section h3 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .tech-badge {
+      background-color: #3498db;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 15px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .back-link {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .feature-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .feature-list li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .feature-list li:before {
+      content: "✓";
+      color: #27ae60;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#publications">Publications</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row project-detail">
+      <div class="col-md-12">
+        <!-- Back Link -->
+        <p><a href="../index.html" class="back-link"><i class="fa fa-arrow-left"></i> Back to Projects</a></p>
+
+        <!-- Project Header -->
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../DXF2CAD_image.png" alt="DXF2CAD" class="project-image-large">
+          </div>
+          <div class="col-md-6">
+            <h1 class="section-title">DXF2CAD</h1>
+            <p class="lead">Generative AI framework for 2D to 3D CAD model conversion</p>
+
+            <!-- GitHub Link -->
+            <p><a href="https://github.com/whoisfrankyang/DXF2CAD" target="_blank" class="btn btn-primary">
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a></p>
+
+            <!-- Technology Stack -->
+            <div class="project-section">
+              <h4>Technologies Used</h4>
+              <div class="tech-stack">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">PyTorch</span>
+                <span class="tech-badge">Transformers</span>
+                <span class="tech-badge">Computer Vision</span>
+                <span class="tech-badge">3D Modeling</span>
+                <span class="tech-badge">STEP Format</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Content -->
+        <div class="project-content">
+          <div class="project-section">
+            <h3>Overview</h3>
+            <p>A generative AI framework that learns from 2D DXF blueprints to construct editable 3D CAD models in STEP
+              format in seconds. This project represents a breakthrough in automated CAD model generation, significantly
+              reducing the time and effort required to convert 2D technical drawings into fully functional 3D models.
+            </p>
+          </div>
+
+          <div class="project-section">
+            <h3>Key Features</h3>
+            <ul class="feature-list">
+              <li><strong>Rapid Conversion:</strong> Generate 3D CAD models from 2D DXF files in seconds</li>
+              <li><strong>Editable Output:</strong> Produces fully editable STEP format CAD models</li>
+              <li><strong>AI-Powered Learning:</strong> Uses transformer-based models to understand blueprint patterns
+              </li>
+              <li><strong>High Accuracy:</strong> Maintains geometric precision and design intent</li>
+              <li><strong>Industry Standard:</strong> Outputs in STEP format for universal CAD compatibility</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h3>Technical Architecture</h3>
+            <p>The system employs a sophisticated multi-stage pipeline:</p>
+            <ul>
+              <li><strong>DXF Parsing:</strong> Extracts geometric entities and relationships from 2D blueprints</li>
+              <li><strong>Feature Recognition:</strong> Identifies patterns, dimensions, and design constraints</li>
+              <li><strong>3D Reconstruction:</strong> Uses transformer models to infer 3D geometry from 2D projections
+              </li>
+              <li><strong>STEP Generation:</strong> Converts reconstructed geometry to industry-standard STEP format
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h3>Innovation & Impact</h3>
+            <p>This project addresses critical challenges in CAD workflow automation:</p>
+            <ul>
+              <li>Eliminates manual 3D modeling from 2D drawings</li>
+              <li>Reduces design iteration time from hours to seconds</li>
+              <li>Enables rapid prototyping and design validation</li>
+              <li>Bridges the gap between 2D technical documentation and 3D modeling</li>
+              <li>Supports legacy drawing digitization and modernization</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h3>Applications</h3>
+            <p>DXF2CAD has broad applications across engineering disciplines:</p>
+            <ul>
+              <li><strong>Manufacturing:</strong> Rapid conversion of production drawings to 3D models</li>
+              <li><strong>Architecture:</strong> Automated building information modeling from blueprints</li>
+              <li><strong>Mechanical Engineering:</strong> Component design and assembly modeling</li>
+              <li><strong>Legacy Digitization:</strong> Converting historical technical drawings to modern CAD formats
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>© 2023 Bohan Yang. All rights reserved.</p>
+          <p>
+            <small>
+              Design based on <a href="https://github.com/mavroudisv/plain-academic" target="_blank">Plain Academic</a>
+            </small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--
+    Storytelling Assistant Project Detail Page
+    Based on Plain-Academic by Vasilios Mavroudis
+    Modified by Bohan Yang
+-->
+
+<html lang="en">
+
+<head>
+  <title>Storytelling Assistant - Bohan Yang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="AI-powered tool that transforms technical content into engaging narratives for different audiences">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- Font Awesome for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700|Open+Sans:400,600" rel="stylesheet" type="text/css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .project-detail {
+      margin-top: 40px;
+    }
+
+    .project-image-large {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .project-content {
+      margin-top: 30px;
+    }
+
+    .project-section {
+      margin-bottom: 40px;
+    }
+
+    .project-section h3 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .tech-badge {
+      background-color: #3498db;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 15px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .back-link {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .feature-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .feature-list li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .feature-list li:before {
+      content: "✓";
+      color: #27ae60;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#publications">Publications</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row project-detail">
+      <div class="col-md-12">
+        <!-- Back Link -->
+        <p><a href="../index.html" class="back-link"><i class="fa fa-arrow-left"></i> Back to Projects</a></p>
+
+        <!-- Project Header -->
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../storytelling_assistant.png" alt="Storytelling Assistant" class="project-image-large">
+          </div>
+          <div class="col-md-6">
+            <h1 class="section-title">Storytelling Assistant</h1>
+            <p class="lead">AI-powered tool that transforms technical content into engaging narratives</p>
+
+            <!-- GitHub Link -->
+            <p><a href="https://github.com/whoisfrankyang/StorytellingAssistant" target="_blank"
+                class="btn btn-primary">
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a></p>
+
+            <!-- Technology Stack -->
+            <div class="project-section">
+              <h4>Technologies Used</h4>
+              <div class="tech-stack">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">RAG</span>
+                <span class="tech-badge">Transformers</span>
+                <span class="tech-badge">Custom ML Models</span>
+                <span class="tech-badge">NLP</span>
+                <span class="tech-badge">Machine Learning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Content -->
+        <div class="project-content">
+          <div class="project-section">
+            <h3>Overview</h3>
+            <p>A powerful AI-powered tool that helps transform technical content into engaging narratives for different
+              audiences. The system uses a combination of RAG (Retrieval-Augmented Generation) and a custom scoring
+              model to generate and evaluate high-quality pitches.</p>
+          </div>
+
+          <div class="project-section">
+            <h3>Key Features</h3>
+            <ul class="feature-list">
+              <li><strong>Multiple Output Modes:</strong> Tailored for different audiences including Investor Mode,
+                Conference Mode, and General Mode</li>
+              <li><strong>Quality Assessment:</strong> Custom ML-based scoring model evaluates pitches on four criteria
+                (Coherence, Consistency, Fluency, Relevance)</li>
+              <li><strong>Self-Reflection System:</strong> Automatically improves generated content based on scoring
+                feedback</li>
+              <li><strong>Adaptive Learning:</strong> Multiple generation attempts to achieve quality threshold while
+                maintaining best version</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h3>Technical Implementation</h3>
+            <p>The system employs a sophisticated architecture that combines:</p>
+            <ul>
+              <li><strong>RAG Framework:</strong> Retrieval-Augmented Generation for context-aware content generation
+              </li>
+              <li><strong>Custom Scoring Model:</strong> ML-based evaluation system with 4-20 point scoring scale</li>
+              <li><strong>Multi-Modal Processing:</strong> Handles different input formats and output requirements</li>
+              <li><strong>Iterative Improvement:</strong> Self-reflection mechanism for continuous content enhancement
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h3>Impact & Applications</h3>
+            <p>This tool addresses the critical need for effective science communication by:</p>
+            <ul>
+              <li>Bridging the gap between technical expertise and audience understanding</li>
+              <li>Enabling researchers to communicate their work more effectively</li>
+              <li>Supporting entrepreneurs in crafting compelling pitches</li>
+              <li>Improving accessibility of complex technical concepts</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>© 2023 Bohan Yang. All rights reserved.</p>
+          <p>
+            <small>
+              Design based on <a href="https://github.com/mavroudisv/plain-academic" target="_blank">Plain Academic</a>
+            </small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

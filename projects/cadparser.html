@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!--
+    CADParser Project Detail Page
+    Based on Plain-Academic by Vasilios Mavroudis
+    Modified by Bohan Yang
+-->
+
+<html lang="en">
+
+<head>
+  <title>CADParser - Bohan Yang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Transformer-based model for generating parametric construction sequences from 3D CAD models">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- Font Awesome for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700|Open+Sans:400,600" rel="stylesheet" type="text/css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .project-detail {
+      margin-top: 40px;
+    }
+
+    .project-image-large {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .project-content {
+      margin-top: 30px;
+    }
+
+    .project-section {
+      margin-bottom: 40px;
+    }
+
+    .project-section h3 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .tech-badge {
+      background-color: #3498db;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 15px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .back-link {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .feature-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .feature-list li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .feature-list li:before {
+      content: "✓";
+      color: #27ae60;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#publications">Publications</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row project-detail">
+      <div class="col-md-12">
+        <!-- Back Link -->
+        <p><a href="../index.html" class="back-link"><i class="fa fa-arrow-left"></i> Back to Projects</a></p>
+
+        <!-- Project Header -->
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../CADParser_Image.png" alt="CADParser" class="project-image-large">
+          </div>
+          <div class="col-md-6">
+            <h1 class="section-title">CADParser</h1>
+            <p class="lead">Transformer-based model for parametric CAD sequence generation</p>
+
+            <!-- GitHub Link -->
+            <p><a href="https://github.com/spicywagyu04/CADParser" target="_blank" class="btn btn-primary">
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a></p>
+
+            <!-- Technology Stack -->
+            <div class="project-section">
+              <h4>Technologies Used</h4>
+              <div class="tech-stack">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">PyTorch</span>
+                <span class="tech-badge">Transformers</span>
+                <span class="tech-badge">Graph Neural Networks</span>
+                <span class="tech-badge">DGL</span>
+                <span class="tech-badge">3D Processing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Content -->
+        <div class="project-content">
+          <div class="project-section">
+            <h3>Overview</h3>
+            <p>CADParser is a reimplementation of a transformer-based model that generates parametric construction
+              sequences from 3D CAD models. This project focuses on understanding and replicating the complex process of
+              converting 3D geometric data into step-by-step construction instructions that can be used for
+              manufacturing, assembly, or educational purposes.</p>
+          </div>
+
+          <div class="project-section">
+            <h3>Key Features</h3>
+            <ul class="feature-list">
+              <li><strong>3D Model Analysis:</strong> Processes complex 3D CAD models to extract geometric features</li>
+              <li><strong>Sequence Generation:</strong> Produces step-by-step construction sequences from geometric data
+              </li>
+              <li><strong>Transformer Architecture:</strong> Uses state-of-the-art transformer models for sequence
+                learning</li>
+              <li><strong>Graph Neural Networks:</strong> Leverages DGL for processing geometric relationships</li>
+              <li><strong>Parametric Understanding:</strong> Generates sequences that maintain parametric relationships
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h3>Technical Implementation</h3>
+            <p>The system employs a sophisticated multi-stage approach:</p>
+            <ul>
+              <li><strong>3D Feature Extraction:</strong> Analyzes CAD models to identify geometric primitives and
+                relationships</li>
+              <li><strong>Graph Construction:</strong> Builds graph representations of geometric dependencies</li>
+              <li><strong>Transformer Processing:</strong> Uses attention mechanisms to understand construction order
+              </li>
+              <li><strong>Sequence Generation:</strong> Produces human-readable construction steps</li>
+              <li><strong>Validation:</strong> Ensures generated sequences are geometrically valid</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h3>Applications & Impact</h3>
+            <p>CADParser addresses critical challenges in CAD workflow automation:</p>
+            <ul>
+              <li><strong>Manufacturing:</strong> Automates the generation of assembly instructions</li>
+              <li><strong>Education:</strong> Helps students understand complex 3D construction processes</li>
+              <li><strong>Reverse Engineering:</strong> Analyzes existing designs to understand construction methods
+              </li>
+              <li><strong>Quality Control:</strong> Validates construction sequences for feasibility</li>
+              <li><strong>Documentation:</strong> Automatically generates technical documentation</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h3>Research Contributions</h3>
+            <p>This project contributes to the field of computational geometry and CAD automation:</p>
+            <ul>
+              <li>Novel application of transformers to 3D geometric sequence generation</li>
+              <li>Integration of graph neural networks with transformer architectures</li>
+              <li>Development of robust methods for parametric relationship preservation</li>
+              <li>Advancement in automated CAD documentation and instruction generation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>© 2023 Bohan Yang. All rights reserved.</p>
+          <p>
+            <small>
+              Design based on <a href="https://github.com/mavroudisv/plain-academic" target="_blank">Plain Academic</a>
+            </small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
