@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!--
+    Pixelate Project Detail Page
+    Based on Plain-Academic by Vasilios Mavroudis
+    Modified by Bohan Yang
+-->
+
+<html lang="en">
+
+<head>
+  <title>Pixelate - Bohan Yang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI-powered CAD Copilot for engineers, designers, and makers">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- Font Awesome for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700|Open+Sans:400,600" rel="stylesheet" type="text/css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .project-detail {
+      margin-top: 40px;
+    }
+
+    .project-image-large {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .project-content {
+      margin-top: 30px;
+    }
+
+    .project-section {
+      margin-bottom: 40px;
+    }
+
+    .project-section h3 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .tech-badge {
+      background-color: #3498db;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 15px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .back-link {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .feature-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .feature-list li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .feature-list li:before {
+      content: "✓";
+      color: #27ae60;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#publications">Publications</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row project-detail">
+      <div class="col-md-12">
+        <!-- Back Link -->
+        <p><a href="../index.html" class="back-link"><i class="fa fa-arrow-left"></i> Back to Projects</a></p>
+
+        <!-- Project Header -->
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../pixelate.png" alt="Pixelate CAD Copilot" class="project-image-large">
+          </div>
+          <div class="col-md-6">
+            <h1 class="section-title">Pixelate</h1>
+            <p class="lead">AI-powered CAD Copilot for engineers, designers, and makers</p>
+
+            <!-- Website Link -->
+            <p><a href="https://www.pixelateinc.com" target="_blank" class="btn btn-primary">
+                <i class="fa-solid fa-globe"></i> Visit Website
+              </a></p>
+
+            <!-- Technology Stack -->
+            <div class="project-section">
+              <h4>Technologies Used</h4>
+              <div class="tech-stack">
+                <span class="tech-badge">AI/ML</span>
+                <span class="tech-badge">CAD Integration</span>
+                <span class="tech-badge">Computer Vision</span>
+                <span class="tech-badge">Natural Language Processing</span>
+                <span class="tech-badge">Cloud Computing</span>
+                <span class="tech-badge">API Development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Content -->
+        <div class="project-content">
+          <div class="project-section">
+            <h3>Overview</h3>
+            <p>Pixelate is a revolutionary AI-powered CAD Copilot that transforms how engineers, designers, and makers
+              interact with computer-aided design software. As a co-founded startup, this project represents the cutting
+              edge of AI integration in professional design workflows, making complex CAD operations accessible through
+              natural language commands and intelligent automation.</p>
+          </div>
+
+          <div class="project-section">
+            <h3>Key Features</h3>
+            <ul class="feature-list">
+              <li><strong>Natural Language Interface:</strong> Control CAD software using conversational commands</li>
+              <li><strong>Intelligent Automation:</strong> Automate repetitive design tasks and workflows</li>
+              <li><strong>Design Assistance:</strong> AI-powered suggestions for design improvements and optimizations
+              </li>
+              <li><strong>Cross-Platform Integration:</strong> Works with major CAD software platforms</li>
+              <li><strong>Real-time Collaboration:</strong> Enhanced team collaboration through AI-assisted design
+                review</li>
+              <li><strong>Learning System:</strong> Adapts to user preferences and design patterns</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h3>Technical Innovation</h3>
+            <p>Pixelate leverages advanced AI technologies to revolutionize CAD workflows:</p>
+            <ul>
+              <li><strong>Computer Vision:</strong> Analyzes 3D models and 2D drawings to understand design intent</li>
+              <li><strong>Natural Language Processing:</strong> Translates human commands into precise CAD operations
+              </li>
+              <li><strong>Machine Learning:</strong> Learns from user behavior to provide personalized assistance</li>
+              <li><strong>API Integration:</strong> Seamlessly integrates with existing CAD software ecosystems</li>
+              <li><strong>Cloud Processing:</strong> Leverages cloud computing for complex AI operations</li>
+              <li><strong>Real-time Processing:</strong> Provides instant feedback and suggestions during design work
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h3>Market Impact</h3>
+            <p>Pixelate addresses critical challenges in the engineering and design industry:</p>
+            <ul>
+              <li><strong>Productivity Enhancement:</strong> Reduces design time by automating routine tasks</li>
+              <li><strong>Skill Democratization:</strong> Makes advanced CAD techniques accessible to all skill levels
+              </li>
+              <li><strong>Design Quality:</strong> AI-powered suggestions improve design quality and consistency</li>
+              <li><strong>Workflow Optimization:</strong> Streamlines complex design processes</li>
+              <li><strong>Innovation Acceleration:</strong> Enables designers to focus on creative problem-solving</li>
+              <li><strong>Cost Reduction:</strong> Reduces training time and design iteration costs</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h3>Entrepreneurial Journey</h3>
+            <p>As a co-founded startup, Pixelate represents the intersection of technical innovation and business
+              acumen:</p>
+            <ul>
+              <li><strong>Market Research:</strong> Identified critical pain points in CAD workflows</li>
+              <li><strong>Product Development:</strong> Built MVP and iterated based on user feedback</li>
+              <li><strong>Technical Leadership:</strong> Led development of core AI algorithms and integration</li>
+              <li><strong>Business Strategy:</strong> Developed go-to-market strategy and business model</li>
+              <li><strong>Team Building:</strong> Assembled and managed cross-functional development team</li>
+              <li><strong>Funding & Growth:</strong> Secured funding and scaled the product for market launch</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h3>Future Vision</h3>
+            <p>Pixelate is positioned to transform the entire design and manufacturing ecosystem:</p>
+            <ul>
+              <li><strong>Industry 4.0 Integration:</strong> Connecting CAD with manufacturing and IoT systems</li>
+              <li><strong>AI-Driven Design:</strong> Automated design generation based on requirements</li>
+              <li><strong>Collaborative Intelligence:</strong> Enhanced team collaboration through AI assistance</li>
+              <li><strong>Educational Impact:</strong> Making advanced design tools accessible in education</li>
+              <li><strong>Global Accessibility:</strong> Democratizing professional design capabilities worldwide</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>© 2023 Bohan Yang. All rights reserved.</p>
+          <p>
+            <small>
+              Design based on <a href="https://github.com/mavroudisv/plain-academic" target="_blank">Plain Academic</a>
+            </small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
