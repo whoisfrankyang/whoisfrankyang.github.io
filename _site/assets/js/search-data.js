@@ -384,16 +384,14 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-jun-16-17-2025-attending-y-combinator-ai-startup-school-2025-in-sf",
+          title: 'Jun 16–17, 2025 — Attending Y Combinator AI Startup School 2025 in SF....',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-attending-nerc-25-at-cornell",
+          title: 'Attending NERC ‘25 at Cornell.',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-mar-16-19-2026-attending-hri-26-in-edinburgh-scotland-check-out-our-paper-a-human-in-the-loop-confidence-aware-failure-recovery-framework-for-modular-robot-policies",
+          title: 'Mar 16–19, 2026 — Attending HRI ‘26 in Edinburgh, Scotland. Check out our...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
