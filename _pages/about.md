@@ -27,6 +27,6 @@ Computer Science @ [Cornell University](https://www.cs.cornell.edu)
 
 Hi! I'm Bohan Yang, a fourth-year undergraduate student at Cornell University majoring in Computer Science.
 
-I work with [Tapomayukh Bhattacharjee](https://sites.google.com/site/tapomayukh) and [Sarah Dean](https://sdean.website) on assistive robotics and human-in-the-loop robot learning at [Cornell EmPRISE Lab](https://emprise.cs.cornell.edu). I also collaborate with [Weiqing Gu](https://www.hmc.edu/mathematics/faculty-staff/gu/) at [Data-to-Decision](https://data-to-decision.com) on AI for clinical voice analysis.
+I work with [Tapomayukh Bhattacharjee](https://sites.google.com/site/tapomayukh) on assistive robotics and human-in-the-loop robot learning at [Cornell EmPRISE Lab](https://emprise.cs.cornell.edu). I also collaborate with [Weiqing Gu](https://www.hmc.edu/mathematics/faculty-staff/gu/) at [Data-to-Decision](https://data-to-decision.com) on AI for clinical voice analysis.
 
 I am broadly interested in enabling robots to learn and adapt from human feedback during real-world deployment, with a focus on human-in-the-loop learning, uncertainty-aware autonomy, and post-deployment adaptation under distribution shift.

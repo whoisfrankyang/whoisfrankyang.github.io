@@ -54,11 +54,7 @@
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
-
       {% assign author_array_limit = author_array_size %}
-      {% if site.max_author_limit and author_array_size > site.max_author_limit %}
-        {% assign author_array_limit = site.max_author_limit %}
-      {% endif %}
 
       {% assign equal_contrib_authors = null %}
       {% if entry.equal_contrib_authors %}
