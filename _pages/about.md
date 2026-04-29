@@ -25,6 +25,7 @@ latest_posts:
 
 Computer Science @ [Cornell University](https://www.cs.cornell.edu)
 
-Hi! I'm Cornell undergrad advised by [Tapomayukh Bhattacharjee](https://sites.google.com/site/tapomayukh) on assistive robotics and human-in-the-loop robot learning at [Cornell EmPRISE Lab](https://emprise.cs.cornell.edu). I’m interested in building physical AI systems that tackle long-tail failures by learning from experience and adapting through interaction.
+Hi! I'm Cornell undergrad advised by [Tapomayukh Bhattacharjee](https://sites.google.com/site/tapomayukh) on assistive robotics and human-in-the-loop robot learning at [Cornell EmPRISE Lab](https://emprise.cs.cornell.edu). 
 
-I will be starting as a CS PhD student at UW-Madison this Fall (2026).
+
+I’m interested in building physical AI systems that tackle long-tail failures by learning from experience and adapting through interaction.
