@@ -1,12 +1,18 @@
 ---
-layout: cv
+layout: page
 permalink: /cv/
-title: CV
-nav: false
-nav_order: 5
-cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
-cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
+title: cv
+nav: true
+nav_order: 3
+description:
 ---
+
+<div style="margin-bottom: 1rem;">
+  <a href="{{ '/assets/pdf/Bohan_Yang_CV.pdf' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">
+    <i class="fas fa-download"></i> Download PDF
+  </a>
+</div>
+
+<object data="{{ '/assets/pdf/Bohan_Yang_CV.pdf' | relative_url }}" type="application/pdf" width="100%" height="1100px" style="border: 1px solid #ddd; border-radius: 4px;">
+  <p>Your browser does not display embedded PDFs. <a href="{{ '/assets/pdf/Bohan_Yang_CV.pdf' | relative_url }}">Download the PDF</a>.</p>
+</object>
